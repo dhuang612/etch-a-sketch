@@ -3,6 +3,7 @@ var createGrid;
 var makeGrid = document
   .getElementById('createGrid')
   .addEventListener('click', function() {
+    resizeGrid();
     var createGrid = prompt('How many rows do you want?');
 
     let number = parseInt(createGrid);
@@ -52,7 +53,6 @@ function resizeGrid() {
   while (divContainer.firstChild) {
     divContainer.removeChild(divContainer.firstChild);
   }
-  makeGrid();
 }
 
 function getRandomColor() {
